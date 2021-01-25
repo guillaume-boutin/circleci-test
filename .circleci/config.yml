@@ -73,7 +73,7 @@ jobs:
 
       - run:
           name: Run Laravel Server
-          command: php artisan serve
+          command: php artisan serve --host=127.0.0.1 --port=8000
           background: true
 
       - run:
