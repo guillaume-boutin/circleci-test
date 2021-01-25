@@ -15,7 +15,7 @@ class ExampleHttpTest extends TestCase
         $email = $this->faker->email();
         $password = "mypassword";
 
-        $response = $this->postJson('/api/createuser', [
+        $response = $this->postJson('/api/user', [
             'name' => $name,
             'email' => $email,
             'password' => $password,
