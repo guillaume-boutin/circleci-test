@@ -2,12 +2,14 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class ExampleHttpTest extends TestCase
 {
     use WithFaker;
+    use RefreshDatabase;
 
     public function testUserCreationEndpointTest()
     {
